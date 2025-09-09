@@ -44,4 +44,4 @@ let lighterBike = bikes [0]
     }
  }
 
-console.log(lighterBike);
+console.log(`La bici più leggera è: ${lighterBike.nome} e pesa ${lighterBike.peso}`);
