@@ -37,3 +37,19 @@ const team = [
 
     },
 ];
+
+function casualNum (min, max){
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+let value = []
+
+for ( let i = 0; i < team.length; i++){
+
+    team[i].puntiFatti = casualNum (0, 100);
+    team[i].falliSubiti = casualNum (0, 500);
+
+    value.push(team[i].nome, team[i].falliSubiti);
+
+}
+console.log(team);
+console.log(value);
